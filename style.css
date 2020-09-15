@@ -1,0 +1,83 @@
+table{
+		margin-left: auto;
+		margin-right: auto;
+}
+table td{
+	width: 61.5px;
+	height: 61.5px;
+	text-align: center;
+	overflow: hidden;
+	cursor: default;
+}
+td {
+	border: 1px solid;
+	padding: 0;
+}
+.nobr td{
+	border: none;
+}
+.nobrd{
+	border: none;
+}
+.bold td{
+	font-weight: bold;
+}
+table.property td{
+	width: 70px;
+	height: 30px;
+}
+.small{
+	font-size: small;
+}
+
+h1{
+	font-size: 11px;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+h2{
+	font-size: 10px;
+	margin: 0;
+}
+
+/*Color*/
+.alkali{
+	background: #E47A9A;
+	border-color: #aa0033;
+}
+.alkaline{
+	background: #EBD366;
+	border-color: #9c8d4b;
+}
+.transition{
+	background: #FFE89D;
+	border-color: #c49e21;
+}
+.basic{
+	background: #61FF7B;
+	border-color: #00c020;
+}
+.semi{
+	background: #66D3FF;
+	border-color: #0096d1;
+}
+.non{
+	background: #38A9FF;
+	border-color: #005ba1;
+}
+.halogen{
+	background: #6048FF;
+	border-color: #3824b6;
+}
+.nobel{
+	background: #B19DC7;
+	border-color: #694096;
+}
+.lanthanide{
+	background: #9F7537;
+	border-color: #794c09;
+}
+.actinide{
+	background: #FF9A3F;
+	border-color: #c05a00;
+}
