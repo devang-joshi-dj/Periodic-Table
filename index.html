@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<meta charset="ISO-8859-1">
+		<meta charset="utf-8">
 		<title>Periodic Table</title>
 		<link rel="stylesheet" href="style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -36,122 +36,122 @@
 
 			<tr>
 				<td class="nobrd">1</td>
-				<td class="non" id="hydrogen"><sup>1</sup>H<h1>Hydrogen</h1><h2>1.008</h2></td>
+				<td class="non" id="hydrogen"><script type="text/javascript">tableInfo(0)</script></td>
 				<td class="nobrd" colspan="16" id="info1"></td>
-				<td class="nobel" id="helium"><sup>2</sup>He<h1>Helium</h1><h2>4.003</h2></td>
+				<td class="nobel" id="helium"><script type="text/javascript">tableInfo(1)</script></td>
 			</tr>
 
 			<tr>
 				<td class="nobrd">2</td>
-				<td class="alkali"><sup>3</sup>Li<h1>Lithium</h1><h2>6.941</h2></td>
-				<td class="alkaline"><sup>4</sup>Be<h1>Beryllium</h1><h2>9.012</h2></td>
+				<td class="alkali" id="lithium"><script type="text/javascript">tableInfo(2)</script></td>
+				<td class="alkaline" id="beryllium"><script type="text/javascript">tableInfo(3)</script></td>
 				<td class="nobrd" colspan="10" rowspan="2" id="info2"></td>
-				<td class="semi"><sup>5</sup>B<h1>Boron</h1><h2>10.811</h2></td>
-				<td class="non"><sup>6</sup>C<h1>Carbon</h1><h2>12.011</h2></td>
-				<td class="non"><sup>7</sup>N<h1>Nitrogen</h1><h2>14.007</h2></td>
-				<td class="non"><sup>8</sup>O<h1>Oxygen</h1><h2>15.999</h2></td>
-				<td class="halogen"><sup>9</sup>F<h1>Fluorine</h1><h2>18.998</h2></td>
-				<td class="nobel"><sup>10</sup>Ne<h1>Neon</h1><h2>20.180</h2></td>
+				<td class="semi" id="boron"><script type="text/javascript">tableInfo(4)</script></td>
+				<td class="non" id="carbon"><script type="text/javascript">tableInfo(5)</script></td>
+				<td class="non" id="nitrogen"><script type="text/javascript">tableInfo(6)</script></td>
+				<td class="non" id="oxygen"><script type="text/javascript">tableInfo(7)</script></td>
+				<td class="halogen" id="fluorine"><script type="text/javascript">tableInfo(8)</script></td>
+				<td class="nobel" id="neon"><script type="text/javascript">tableInfo(9)</script></td>
 			</tr>
 
 			<tr>
 				<td class="nobrd">3</td>
-				<td class="alkali"><sup>11</sup>Na<h1>Sodium</h1><h2>22.990</h2></td>
-				<td class="alkaline"><sup>12</sup>Mg<h1>Magnesium</h1><h2>24.305</h2></td>
-				<td class="basic"><sup>13</sup>Al<h1>Aluminum</h1><h2>26.982</h2></td>
-				<td class="semi"><sup>14</sup>Si<h1>Silicon</h1><h2>28.086</h2></td>
-				<td class="non"><sup>15</sup>P<h1>Phosphorus</h1><h2>30.974</h2></td>
-				<td class="non"><sup>16</sup>S<h1>Sulfur</h1><h2>32.066</h2></td>
-				<td class="halogen"><sup>17</sup>Cl<h1>Chlorine</h1><h2>35.453</h2></td>
-				<td class="nobel"><sup>18</sup>Ar<h1>Argon</h1><h2>39.948</h2></td>
+				<td class="alkali" id="sodium"><script type="text/javascript">tableInfo(10)</script></td>
+				<td class="alkaline" id="magnesium"><script type="text/javascript">tableInfo(11)</script></td>
+				<td class="basic" id="aluminum"><script type="text/javascript">tableInfo(12)</script></td>
+				<td class="semi" id="silicon"><script type="text/javascript">tableInfo(13)</script></td>
+				<td class="non" id="phosphorus"><script type="text/javascript">tableInfo(14)</script></td>
+				<td class="non" id="sulfur"><script type="text/javascript">tableInfo(15)</script></td>
+				<td class="halogen" id="chlorine"><script type="text/javascript">tableInfo(16)</script></td>
+				<td class="nobel" id="argon"><script type="text/javascript">tableInfo(17)</script></td>
 			</tr>
 
 			<tr>
 				<td class="nobrd">4</td>
-				<td class="alkali"><sup>19</sup>K<h1>Potassium</h1><h2>39.098</h2></td>
-				<td class="alkaline"><sup>20</sup>Ca<h1>Calcium</h1><h2>40.078</h2></td>
-				<td class="transition"><sup>21</sup>Sc<h1>Scandium</h1><h2>44.956</h2></td>
-				<td class="transition"><sup>22</sup>Ti<h1>Titanium</h1><h2>47.867</h2></td>
-				<td class="transition"><sup>23</sup>V<h1>Vanadium</h1><h2>50.942</h2></td>
-				<td class="transition"><sup>24</sup>Cr<h1>Chromium</h1><h2>51.996</h2></td>
-				<td class="transition"><sup>25</sup>Mn<h1>Manganese</h1><h2>54.938</h2></td>
-				<td class="transition"><sup>26</sup>Fe<h1>Iron</h1><h2>55.845</h2></td>
-				<td class="transition"><sup>27</sup>Co<h1>Cobalt</h1><h2>58.933</h2></td>
-				<td class="transition"><sup>28</sup>Ni<h1>Nickel</h1><h2>58.693</h2></td>
-				<td class="transition"><sup>29</sup>Cu<h1>Copper</h1><h2>63.546</h2></td>
-				<td class="transition"><sup>30</sup>Zn<h1>Zinc</h1><h2>65.38</h2></td>
-				<td class="basic"><sup>31</sup>Ga<h1>Gallium</h1><h2>69.723</h2></td>
-				<td class="semi"><sup>32</sup>Ge<h1>Germanium</h1><h2>72.631</h2></td>
-				<td class="semi"><sup>33</sup>As<h1>Arsenic</h1><h2>74.922</h2></td>
-				<td class="non"><sup>34</sup>Se<h1>Selenium</h1><h2>78.972</h2></td>
-				<td class="halogen"><sup>35</sup>Br<h1>Bromine</h1><h2>79.904</h2></td>
-				<td class="nobel"><sup>36</sup>Kr<h1>Krypton</h1><h2>84.798</h2></td>
+				<td class="alkali" id="potassium"><script type="text/javascript">tableInfo(18)</script></td>
+				<td class="alkaline" id="calcium"><script type="text/javascript">tableInfo(19)</script></td>
+				<td class="transition" id="scandium"><script type="text/javascript">tableInfo(20)</script></td>
+				<td class="transition" id="titanium"><script type="text/javascript">tableInfo(21)</script></td>
+				<td class="transition" id="vanadium"><script type="text/javascript">tableInfo(22)</script></td>
+				<td class="transition" id="chromium"><script type="text/javascript">tableInfo(23)</script></td>
+				<td class="transition" id="manganese"><script type="text/javascript">tableInfo(24)</script></td>
+				<td class="transition" id="iron"><script type="text/javascript">tableInfo(25)</script></td>
+				<td class="transition" id="cobalt"><script type="text/javascript">tableInfo(26)</script></td>
+				<td class="transition" id="nickel"><script type="text/javascript">tableInfo(27)</script></td>
+				<td class="transition" id="copper"><script type="text/javascript">tableInfo(28)</script></td>
+				<td class="transition" id="zinc"><script type="text/javascript">tableInfo(29)</script></td>
+				<td class="basic" id="gallium"><script type="text/javascript">tableInfo(30)</script></td>
+				<td class="semi" id="germanium"><script type="text/javascript">tableInfo(31)</script></td>
+				<td class="semi" id="arsenic"><script type="text/javascript">tableInfo(32)</script></td>
+				<td class="non" id="selenium"><script type="text/javascript">tableInfo(33)</script></td>
+				<td class="halogen" id="bromine"><script type="text/javascript">tableInfo(34)</script></td>
+				<td class="nobel" id="krypton"><script type="text/javascript">tableInfo(35)</script></td>
 			</tr>
 
 			<tr>
 				<td class="nobrd">5</td>
-				<td class="alkali"><sup>37</sup>Rb<h1>Rubidium</h1><h2>85.468</h2></td>
-				<td class="alkaline"><sup>38</sup>Sr<h1>Strontium</h1><h2>87.62</h2></td>
-				<td class="transition"><sup>39</sup>Y<h1>Yttrium</h1><h2>88.906</h2></td>
-				<td class="transition"><sup>40</sup>Zr<h1>Zirconium</h1><h2>91.224</h2></td>
-				<td class="transition"><sup>41</sup>Nb<h1>Niobium</h1><h2>92.906</h2></td>
-				<td class="transition"><sup>42</sup>Mo<h1>Molybdenum</h1><h2>95.95</h2></td>
-				<td class="transition"><sup>43</sup>Tc<h1>Technetium</h1><h2>98.907</h2></td>
-				<td class="transition"><sup>44</sup>Ru<h1>Ruthenium</h1><h2>101.07</h2></td>
-				<td class="transition"><sup>45</sup>Rh<h1>Rhodium</h1><h2>102.906</h2></td>
-				<td class="transition"><sup>46</sup>Pd<h1>Palladium</h1><h2>106.42</h2></td>
-				<td class="transition"><sup>47</sup>Ag<h1>Silver</h1><h2>107.868</h2></td>
-				<td class="transition"><sup>48</sup>Cd<h1>Cadmium</h1><h2>112.411</h2></td>
-				<td class="basic"><sup>49</sup>In<h1>Indium</h1><h2>114.818</h2></td>
-				<td class="basic"><sup>50</sup>Sn<h1>Tin</h1><h2>118.711</h2></td>
-				<td class="semi"><sup>51</sup>Sb<h1>Antimony</h1><h2>121.760</h2></td>
-				<td class="semi"><sup>52</sup>Te<h1>Tellurium</h1><h2>127.6</h2></td>
-				<td class="halogen"><sup>53</sup>I<h1>Iodine</h1><h2>126.904</h2></td>
-				<td class="nobel"><sup>54</sup>Xe<h1>Xenon</h1><h2>131.294</h2></td>
+				<td class="alkali" id="rubidium"><script type="text/javascript">tableInfo(36)</script></td>
+				<td class="alkaline" id="strontium"><script type="text/javascript">tableInfo(37)</script></td>
+				<td class="transition" id="tttrium"><script type="text/javascript">tableInfo(38)</script></td>
+				<td class="transition" id="zirconium"><script type="text/javascript">tableInfo(39)</script></td>
+				<td class="transition" id="niobium"><script type="text/javascript">tableInfo(40)</script></td>
+				<td class="transition" id="molybdenum"><script type="text/javascript">tableInfo(41)</script></td>
+				<td class="transition" id="technetium"><script type="text/javascript">tableInfo(42)</script></td>
+				<td class="transition" id="ruthenium"><script type="text/javascript">tableInfo(43)</script></td>
+				<td class="transition" id="rhodium"><script type="text/javascript">tableInfo(44)</script></td>
+				<td class="transition" id="palladium"><script type="text/javascript">tableInfo(45)</script></td>
+				<td class="transition" id="silver"><script type="text/javascript">tableInfo(46)</script></td>
+				<td class="transition" id="cadmium"><script type="text/javascript">tableInfo(47)</script></td>
+				<td class="basic" id="indium"><script type="text/javascript">tableInfo(48)</script></td>
+				<td class="basic" id="tin"><script type="text/javascript">tableInfo(49)</script></td>
+				<td class="semi" id="antimony"><script type="text/javascript">tableInfo(50)</script></td>
+				<td class="semi" id="tellurium"><script type="text/javascript">tableInfo(51)</script></td>
+				<td class="halogen" id="iodine"><script type="text/javascript">tableInfo(52)</script></td>
+				<td class="nobel" id="xenon"><script type="text/javascript">tableInfo(53)</script></td>
 			</tr>
 
 			<tr>
 				<td class="nobrd">6</td>
-				<td class="alkali"><sup>55</sup>Cs<h1>Cesium</h1><h2>132.905</h2></td>
-				<td class="alkaline"><sup>56</sup>Ba<h1>Barium</h1><h2>137.328</h2></td>
-				<td class="lanthanide"><sup>57-71</sup></td>
-				<td class="transition"><sup>72</sup>Hf<h1>Hafnium</h1><h2>178.49</h2></td>
-				<td class="transition"><sup>73</sup>Ta<h1>Tantalum</h1><h2>180.948</h2></td>
-				<td class="transition"><sup>74</sup>W<h1>Tungsten</h1><h2>183.84</h2></td>
-				<td class="transition"><sup>75</sup>Re<h1>Rhenium</h1><h2>186.207</h2></td>
-				<td class="transition"><sup>76</sup>Os<h1>Osmlum</h1><h2>190.23</h2></td>
-				<td class="transition"><sup>77</sup>Ir<h1>Iridium</h1><h2>192.217</h2></td>
-				<td class="transition"><sup>78</sup>Pt<h1>Platinum</h1><h2>195.085</h2></td>
-				<td class="transition"><sup>79</sup>Au<h1>Gold</h1><h2>196.967</h2></td>
-				<td class="transition"><sup>80</sup>Hg<h1>Mercury</h1><h2>200.592</h2></td>
-				<td class="basic"><sup>81</sup>Tl<h1>Thallium</h1><h2>204.383</h2></td>
-				<td class="basic"><sup>82</sup>Pb<h1>Lead</h1><h2>207.2</h2></td>
-				<td class="basic"><sup>83</sup>Bi<h1>Bismuth</h1><h2>208.980</h2></td>
-				<td class="semi"><sup>84</sup>Po<h1>Polonium</h1><h2>[208.982]</h2></td>
-				<td class="halogen"><sup>85</sup>At<h1>Astatine</h1><h2>209.987</h2></td>
-				<td class="nobel"><sup>86</sup>Rn<h1>Radon</h1><h2>222.018</h2></td>
+				<td class="alkali" id="cesium"><script type="text/javascript">tableInfo(54)</script></td>
+				<td class="alkaline" id="barium"><script type="text/javascript">tableInfo(55)</script></td>
+				<td class="lanthanide" id="lanthanide"><sup>57-71</sup></td>
+				<td class="transition" id="hafnium"><script type="text/javascript">tableInfo(71)</script></td>
+				<td class="transition" id="tantalum"><script type="text/javascript">tableInfo(72)</script></td>
+				<td class="transition" id="tungsten"><script type="text/javascript">tableInfo(73)</script></td>
+				<td class="transition" id="rhenium"><script type="text/javascript">tableInfo(74)</script></td>
+				<td class="transition" id="osmlum"><script type="text/javascript">tableInfo(75)</script></td>
+				<td class="transition" id="iridium"><script type="text/javascript">tableInfo(76)</script></td>
+				<td class="transition" id="platinum"><script type="text/javascript">tableInfo(77)</script></td>
+				<td class="transition" id="gold"><script type="text/javascript">tableInfo(78)</script></td>
+				<td class="transition" id="mercury"><script type="text/javascript">tableInfo(79)</script></td>
+				<td class="basic" id="thallium"><script type="text/javascript">tableInfo(80)</script></td>
+				<td class="basic" id="lead"><script type="text/javascript">tableInfo(81)</script></td>
+				<td class="basic" id="bismuth"><script type="text/javascript">tableInfo(82)</script></td>
+				<td class="semi" id="polonium"><script type="text/javascript">tableInfo(83)</script></td>
+				<td class="halogen" id="astatine"><script type="text/javascript">tableInfo(84)</script></td>
+				<td class="nobel" id="radon"><script type="text/javascript">tableInfo(85)</script></td>
 			</tr>
 
 			<tr>
 				<td class="nobrd">7</td>
-				<td class="alkali"><sup>87</sup>Fr<h1>Francium</h1><h2>223.020</h2></td>
-				<td class="alkaline"><sup>88</sup>Ra<h1>Radium</h1><h2>226.025</h2></td>
-				<td class="actinide"><sup>89-103</sup></td>
-				<td class="transition"><sup>104</sup>Rf<h1>Rutherfodium</h1><h2>[261]</h2></td>
-				<td class="transition"><sup>105</sup>Db<h1>Dubnium</h1><h2>[262]</h2></td>
-				<td class="transition"><sup>106</sup>Sg<h1>Seaborgium</h1><h2>[266]</h2></td>
-				<td class="transition"><sup>107</sup>Bh<h1>Bohrium</h1><h2>[264]</h2></td>
-				<td class="transition"><sup>108</sup>Hs<h1>Hassium</h1><h2>[269]</h2></td>
-				<td class="transition"><sup>109</sup>Mt<h1>Meitnerium</h1><h2>[268]</h2></td>
-				<td class="transition"><sup>110</sup>Ds<h1>Darmstadium</h1><h2>[269]</h2></td>
-				<td class="transition"><sup>111</sup>Rg<h1>Roentgenium</h1><h2>[272]</h2></td>
-				<td class="transition"><sup>112</sup>Cn<h1>Copernicium</h1><h2>[277]</h2></td>
-				<td class="basic"><sup>113</sup>Nh<h1>Nihonium</h1><h2>unknown</h2></td>
-				<td class="basic"><sup>114</sup>Fl<h1>Flerovium</h1><h2>[289]</h2></td>
-				<td class="basic"><sup>115</sup>Mc<h1>Moscovium</h1><h2>unknown</h2></td>
-				<td class="basic"><sup>116</sup>Lv<h1>Livermorium</h1><h2>[298]</h2></td>
-				<td class="halogen"><sup>117</sup>Ts<h1>Tenessine</h1><h2>unknown</h2></td>
-				<td class="nobel"><sup>118</sup>Og<h1>Oganesson</h1><h2>unknown</h2></td>
+				<td class="alkali" id="francium"><script type="text/javascript">tableInfo(86)</script></td>
+				<td class="alkaline" id="radium"><script type="text/javascript">tableInfo(87)</script></td>
+				<td class="actinide" id="actinide"><sup>89-103</sup></td>
+				<td class="transition" id="rutherfodium"><script type="text/javascript">tableInfo(103)</script></td>
+				<td class="transition" id="dubnium"><script type="text/javascript">tableInfo(104)</script></td>
+				<td class="transition" id="seaborgium"><script type="text/javascript">tableInfo(105)</script></td>
+				<td class="transition" id="bohrium"><script type="text/javascript">tableInfo(106)</script></td>
+				<td class="transition" id="hassium"><script type="text/javascript">tableInfo(107)</script></td>
+				<td class="transition" id="meitnerium"><script type="text/javascript">tableInfo(108)</script></td>
+				<td class="transition" id="darmstadium"><script type="text/javascript">tableInfo(109)</script></td>
+				<td class="transition" id="roentgenium"><script type="text/javascript">tableInfo(110)</script></td>
+				<td class="transition" id="copernicium"><script type="text/javascript">tableInfo(111)</script></td>
+				<td class="basic" id="nihonium"><script type="text/javascript">tableInfo(112)</script></td>
+				<td class="basic" id="flerovium"><script type="text/javascript">tableInfo(113)</script></td>
+				<td class="basic" id="moscovium"><script type="text/javascript">tableInfo(114)</script></td>
+				<td class="basic" id="livermorium"><script type="text/javascript">tableInfo(115)</script></td>
+				<td class="halogen" id="tenessine"><script type="text/javascript">tableInfo(116)</script></td>
+				<td class="nobel" id="oganesson"><script type="text/javascript">tableInfo(117)</script></td>
 			</tr>
 		</table>
 
@@ -160,41 +160,41 @@
 		<table class="bold">
 			<tr>
 				<td class="nobrd" colspan="3" rowspan="2"></td>
-				<td class="small lanthanide">Lanthanide Series</td>
-				<td class="lanthanide"><sup>57</sup>La<h1>Lanthanum</h1><h2>138.905</h2></td>
-				<td class="lanthanide"><sup>58</sup>Ce<h1>Cerium</h1><h2>140.116</h2></td>
-				<td class="lanthanide"><sup>59</sup>Pr<h1>Praseodymium</h1><h2>140.908</h2></td>
-				<td class="lanthanide"><sup>60</sup>Nd<h1>Neodymium</h1><h2>144.242</h2></td>
-				<td class="lanthanide"><sup>61</sup>Pm<h1>Promethium</h1><h2>144.913</h2></td>
-				<td class="lanthanide"><sup>62</sup>Sm<h1>Samarium</h1><h2>150.36</h2></td>
-				<td class="lanthanide"><sup>63</sup>Eu<h1>Europium</h1><h2>151.964</h2></td>
-				<td class="lanthanide"><sup>64</sup>Gd<h1>Gadolinium</h1><h2>157.25</h2></td>
-				<td class="lanthanide"><sup>65</sup>Tb<h1>Terbium</h1><h2>158.925</h2></td>
-				<td class="lanthanide"><sup>66</sup>Dy<h1>Dysprosium</h1><h2>162.500</h2></td>
-				<td class="lanthanide"><sup>67</sup>Ho<h1>Holmium</h1><h2>164.930</h2></td>
-				<td class="lanthanide"><sup>68</sup>Er<h1>Erbium</h1><h2>167.259</h2></td>
-				<td class="lanthanide"><sup>69</sup>Tm<h1>Thulium</h1><h2>168.934</h2></td>
-				<td class="lanthanide"><sup>70</sup>Yb<h1>Ytterbium</h1><h2>173.055</h2></td>
-				<td class="lanthanide"><sup>71</sup>Lu<h1>Lutetium</h1><h2>174.967</h2></td>
+				<td class="small lanthanide" id="lanthanide">Lanthanide Series</td>
+				<td class="lanthanide" id="rutherfodium"><script type="text/javascript">tableInfo(56)</script></td>
+				<td class="lanthanide" id="dubnium"><script type="text/javascript">tableInfo(57)</script></td>
+				<td class="lanthanide" id="seaborgium"><script type="text/javascript">tableInfo(58)</script></td>
+				<td class="lanthanide" id="bohrium"><script type="text/javascript">tableInfo(59)</script></td>
+				<td class="lanthanide" id="hassium"><script type="text/javascript">tableInfo(60)</script></td>
+				<td class="lanthanide" id="meitnerium"><script type="text/javascript">tableInfo(61)</script></td>
+				<td class="lanthanide" id="darmstadium"><script type="text/javascript">tableInfo(62)</script></td>
+				<td class="lanthanide" id="roentgenium"><script type="text/javascript">tableInfo(63)</script></td>
+				<td class="lanthanide" id="copernicium"><script type="text/javascript">tableInfo(64)</script></td>
+				<td class="lanthanide" id="nihonium"><script type="text/javascript">tableInfo(65)</script></td>
+				<td class="lanthanide" id="flerovium"><script type="text/javascript">tableInfo(66)</script></td>
+				<td class="lanthanide" id="moscovium"><script type="text/javascript">tableInfo(67)</script></td>
+				<td class="lanthanide" id="livermorium"><script type="text/javascript">tableInfo(68)</script></td>
+				<td class="lanthanide" id="tenessine"><script type="text/javascript">tableInfo(69)</script></td>
+				<td class="lanthanide" id="oganesson"><script type="text/javascript">tableInfo(70)</script></td>
 			</tr>
 
 			<tr>
-				<td class="small actinide">Actinide Series</td>
-				<td class="actinide"><sup>89</sup>Ac<h1>Actinium</h1><h2>227.028</h2></td>
-				<td class="actinide"><sup>90</sup>Th<h1>Thorium</h1><h2>232.038</h2></td>
-				<td class="actinide"><sup>91</sup>Pa<h1>Protactinium</h1><h2>231.036</h2></td>
-				<td class="actinide"><sup>92</sup>U<h1>Uranium</h1><h2>238.029</h2></td>
-				<td class="actinide"><sup>93</sup>Np<h1>Neptunium</h1><h2>237.048</h2></td>
-				<td class="actinide"><sup>94</sup>Pu<h1>Plutonium</h1><h2>244.064</h2></td>
-				<td class="actinide"><sup>95</sup>Am<h1>Americium</h1><h2>243.061</h2></td>
-				<td class="actinide"><sup>96</sup>Cm<h1>Curium</h1><h2>247.070</h2></td>
-				<td class="actinide"><sup>97</sup>Bk<h1>Berkelium</h1><h2>247.070</h2></td>
-				<td class="actinide"><sup>98</sup>Cf<h1>Californium</h1><h2>251.080</h2></td>
-				<td class="actinide"><sup>99</sup>Es<h1>Einsteinium</h1><h2>[254]</h2></td>
-				<td class="actinide"><sup>100</sup>Fm<h1>Fermium</h1><h2>257.095</h2></td>
-				<td class="actinide"><sup>101</sup>Md<h1>Mendelevium</h1><h2>258.1</h2></td>
-				<td class="actinide"><sup>102</sup>No<h1>Nobelium</h1><h2>259.101</h2></td>
-				<td class="actinide"><sup>103</sup>Lr<h1>Lawrencium</h1><h2>[262]</h2></td>
+				<td class="small actinide" id="actinide">Actinide Series</td>
+				<td class="actinide" id="actinium"><script type="text/javascript">tableInfo(88)</script></td>
+				<td class="actinide" id="thorium"><script type="text/javascript">tableInfo(89)</script></td>
+				<td class="actinide" id="protactinium"><script type="text/javascript">tableInfo(90)</script></td>
+				<td class="actinide" id="uranium"><script type="text/javascript">tableInfo(91)</script></td>
+				<td class="actinide" id="neptunium"><script type="text/javascript">tableInfo(92)</script></td>
+				<td class="actinide" id="plutonium"><script type="text/javascript">tableInfo(93)</script></td>
+				<td class="actinide" id="americium"><script type="text/javascript">tableInfo(94)</script></td>
+				<td class="actinide" id="curium"><script type="text/javascript">tableInfo(95)</script></td>
+				<td class="actinide" id="berkelium"><script type="text/javascript">tableInfo(96)</script></td>
+				<td class="actinide" id="californium"><script type="text/javascript">tableInfo(97)</script></td>
+				<td class="actinide" id="einsteinium"><script type="text/javascript">tableInfo(98)</script></td>
+				<td class="actinide" id="fermium"><script type="text/javascript">tableInfo(99)</script></td>
+				<td class="actinide" id="mendelevium"><script type="text/javascript">tableInfo(100)</script></td>
+				<td class="actinide" id="nobelium"><script type="text/javascript">tableInfo(101)</script></td>
+				<td class="actinide" id="lawrencium"><script type="text/javascript">tableInfo(102)</script></td>
 			</tr>
 		</table>
 
@@ -202,16 +202,16 @@
 
 		<table class="bold property small">
 			<tr>
-				<td class="alkali">Alkali Metal</td>
-				<td class="alkaline">Alkaline Earth</td>
-				<td class="transition">Transition Metal</td>
-				<td class="basic">Basic Metal</td>
-				<td class="semi">Semi Metal</td>
-				<td class="non">Non Metal</td>
-				<td class="halogen">Halogen</td>
-				<td class="nobel">Noble Gas</td>
-				<td class="lanthanide">Lanthanide</td>
-				<td class="actinide">Actinide</td>
+				<td class="alkali" id="alkali"><script type="text/javascript">elementsGrp(0)</script></td>
+				<td class="alkaline" id="alkaline">A<script type="text/javascript">elementsGrp(1)</script></td>
+				<td class="transition" id="transition"><script type="text/javascript">elementsGrp(2)</script></td>
+				<td class="basic" id="basic"><script type="text/javascript">elementsGrp(3)</script></td>
+				<td class="semi" id="semi"><script type="text/javascript">elementsGrp(4)</script></td>
+				<td class="non" id="non"><script type="text/javascript">elementsGrp(5)</script></td>
+				<td class="halogen" id="halogen"><script type="text/javascript">elementsGrp(6)</script></td>
+				<td class="nobel" id="nobel"><script type="text/javascript">elementsGrp(7)</script></td>
+				<td class="lanthanide" id="lanthanide"><script type="text/javascript">elementsGrp(8)</script></td>
+				<td class="actinide" id="actinide"><script type="text/javascript">elementsGrp(9)</script></td>
 			</tr>
 		</table>
 
