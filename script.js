@@ -46,7 +46,7 @@ $(document).ready(function(){
 	});
 
 	non.hover(function(){
-		non.css({"borderWidth": "2px", "borderColor": "black", "backgroundColor": "#147dcc", "transition": "0.2s"});
+		non.css({"borderWidth": "2px", "borderColor": "black", "backgroundColor": "#0262ab", "transition": "0.2s"});
 		$(this).css({"borderWidth": "3.5px", "borderColor": "black", "backgroundColor": "white"});
 	}, function(){
 		non.css({"background": "#38A9FF", "border": "1px solid", "border-color": "#005ba1"});
