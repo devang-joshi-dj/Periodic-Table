@@ -11,71 +11,71 @@ $(document).ready(function(){
 	var actinide = $(".actinide"); // actinide
 
 	alkali.hover(function(){
-		alkali.animate({borderWidth: "2px", borderColor: "black", backgroundColor: "#c75f7f"}, 100 );
-		$(this).animate({borderWidth: "3.5px", borderColor: "black", backgroundColor: ""}, 1 );
+		alkali.css({"borderWidth": "2px", "borderColor": "black", "backgroundColor": "#c75f7f", "transition": "0.2s"});
+		$(this).css({"borderWidth": "3.5px", "borderColor": "black", "backgroundColor": "white"});
 	}, function(){
 		alkali.css({"background": "#E47A9A", "border": "1px solid", "border-color": "#aa0033"});
 	});
 
 	alkaline.hover(function(){
-		alkaline.animate({borderWidth: "2px", borderColor: "black", backgroundColor: "#d9bb34"}, 100 );
-		$(this).animate({borderWidth: "3.5px", borderColor: "black", backgroundColor: ""}, 1 );
+		alkaline.css({"borderWidth": "2px", "borderColor": "black", "backgroundColor": "#d9bb34", "transition": "0.2s"});
+		$(this).css({"borderWidth": "3.5px", "borderColor": "black", "backgroundColor": "white"});
 	}, function(){
 		alkaline.css({"background": "#EBD366", "border": "1px solid", "border-color": "#9c8d4b"});
 	});
 
 	transition.hover(function(){
-		transition.animate({borderWidth: "2px", borderColor: "black", backgroundColor: "#c7b16b"}, 100 );
-		$(this).animate({borderWidth: "3.5px", borderColor: "black", backgroundColor: ""}, 1 );
+		transition.css({"borderWidth": "2px", "borderColor": "black", "backgroundColor": "#c7b16b", "transition": "0.2s"});
+		$(this).css({"borderWidth": "3.5px", "borderColor": "black", "backgroundColor": "white"});
 	}, function(){
 		transition.css({"background": "#FFE89D", "border": "1px solid", "border-color": "#c49e21"});
 	});
 
 	basic.hover(function(){
-		basic.animate({borderWidth: "2px", borderColor: "black", backgroundColor: "#2fbd46"}, 100 );
-		$(this).animate({borderWidth: "3.5px", borderColor: "black", backgroundColor: ""}, 1 );
+		basic.css({"borderWidth": "2px", "borderColor": "black", "backgroundColor": "#2fbd46", "transition": "0.2s"});
+		$(this).css({"borderWidth": "3.5px", "borderColor": "black", "backgroundColor": "white"});
 	}, function(){
 		basic.css({"background": "#61FF7B", "border": "1px solid", "border-color": "#00c020"});
 	});
 
 	semi.hover(function(){
-		semi.animate({borderWidth: "2px", borderColor: "black", backgroundColor: "#3e9bc2"}, 100 );
-		$(this).animate({borderWidth: "3.5px", borderColor: "black", backgroundColor: ""}, 1 );
+		semi.css({"borderWidth": "2px", "borderColor": "black", "backgroundColor": "#3e9bc2", "transition": "0.2s"});
+		$(this).css({"borderWidth": "3.5px", "borderColor": "black", "backgroundColor": "white"});
 	}, function(){
 		semi.css({"background": "#66D3FF", "border": "1px solid", "border-color": "#0096d1"});
 	});
 
 	non.hover(function(){
-		non.animate({borderWidth: "2px", borderColor: "black", backgroundColor: "#147dcc"}, 100 );
-		$(this).animate({borderWidth: "3.5px", borderColor: "black", backgroundColor: ""}, 1 );
+		non.css({"borderWidth": "2px", "borderColor": "black", "backgroundColor": "#147dcc", "transition": "0.2s"});
+		$(this).css({"borderWidth": "3.5px", "borderColor": "black", "backgroundColor": "white"});
 	}, function(){
 		non.css({"background": "#38A9FF", "border": "1px solid", "border-color": "#005ba1"});
 	});
 
 	halogen.hover(function(){
-		halogen.animate({borderWidth: "2px", borderColor: "black", backgroundColor: "#4732d1"}, 100 );
-		$(this).animate({borderWidth: "3.5px", borderColor: "black", backgroundColor: ""}, 1 );
+		halogen.css({"borderWidth": "2px", "borderColor": "black", "backgroundColor": "#4732d1", "transition": "0.2s"});
+		$(this).css({"borderWidth": "3.5px", "borderColor": "black", "backgroundColor": "white"});
 	}, function(){
 		halogen.css({"background": "#6048FF", "border": "1px solid", "border-color": "#3824b6"});
 	});
 
 	nobel.hover(function(){
-		nobel.animate({borderWidth: "2px", borderColor: "black", backgroundColor: "#7b6296"}, 100 );
-		$(this).animate({borderWidth: "3.5px", borderColor: "black", backgroundColor: ""}, 1 );
+		nobel.css({"borderWidth": "2px", "borderColor": "black", "backgroundColor": "#7b6296", "transition": "0.2s"});
+		$(this).css({"borderWidth": "3.5px", "borderColor": "black", "backgroundColor": "white"});
 	}, function(){
 		nobel.css({"background": "#B19DC7", "border": "1px solid", "border-color": "#694096"});
 	});
 
 	lanthanide.hover(function(){
-		lanthanide.animate({borderWidth: "2px", borderColor: "black", backgroundColor: "#785625"}, 100 );
-		$(this).animate({borderWidth: "3.5px", borderColor: "black", backgroundColor: ""}, 1 );
+		lanthanide.css({"borderWidth": "2px", "borderColor": "black", "backgroundColor": "#785625", "transition": "0.2s"});
+		$(this).css({"borderWidth": "3.5px", "borderColor": "black", "backgroundColor": "white"});
 	}, function(){
 		lanthanide.css({"background": "#9F7537", "border": "1px solid", "border-color": "#794c09"});
 	});
 
 	actinide.hover(function(){
-		actinide.animate({borderWidth: "2px", borderColor: "black", backgroundColor: "#cf7727"}, 100 );
-		$(this).animate({borderWidth: "3.5px", borderColor: "black", backgroundColor: ""}, 1 );
+		actinide.css({"borderWidth": "2px", "borderColor": "black", "backgroundColor": "#cf7727", "transition": "0.2s"});
+		$(this).css({"borderWidth": "3.5px", "borderColor": "black", "backgroundColor": "white"});
 	}, function(){
 		actinide.css({"background": "#FF9A3F", "border": "1px solid", "border-color": "#c05a00"});
 	});

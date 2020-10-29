@@ -141,7 +141,7 @@ function tableInfo(i){
 }
 
 function elementGrp(i){
-  document.write(elementGroup[i][0]);
+  document.write("<h1 class='group'>" + elementGroup[i][0] + "</h1>");
 }
 
 $(document).ready(function(){
