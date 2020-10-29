@@ -18,7 +18,7 @@ $(document).ready(function(){
 	});
 
 	alkaline.hover(function(){
-		alkaline.css({"borderWidth": "2px", "borderColor": "black", "backgroundColor": "#d9bb34", "transition": "0.2s"});
+		alkaline.css({"borderWidth": "2px", "borderColor": "black", "backgroundColor": "#bfa42a", "transition": "0.2s"});
 		$(this).css({"borderWidth": "3.5px", "borderColor": "black", "backgroundColor": "white"});
 	}, function(){
 		alkaline.css({"background": "#EBD366", "border": "1px solid", "border-color": "#9c8d4b"});
