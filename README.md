@@ -13,7 +13,3 @@ This Project is created with:
  - jQuery v3.5.1
  - HTML5
  - CSS3
- 
-### **Demo**
-
-<img alt="Demo0" src="https://github.com/himani027/Temp/blob/main/periodic-table-demo.gif"> </img>
