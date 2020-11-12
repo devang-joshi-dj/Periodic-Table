@@ -2,7 +2,7 @@
 
 ### **Description**
 
-  This is interactive Periodic table made with JavaScript library jQuery. 
+  This is an interactive Periodic table made with JavaScript library jQuery. 
   
   When we hover on any element we can see information about it and also highlights all other elements in that group.
 
