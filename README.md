@@ -1,4 +1,4 @@
-# **Periodic-Table_jQuery**
+# **Periodic-Table**
 
 ### **Description**
 
