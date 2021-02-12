@@ -1,4 +1,4 @@
-var elements = [
+const elements = [
     ["Hydrogen", 1, "H", 1.008, "Hydrogen is the most abundant chemical substance in the universe, constituting roughly 75% of all baryonic mass. Non-remnant stars are mainly composed of hydrogen in the plasma state. The most common isotope of hydrogen, termed protium (name rarely used, symbol 1H), has one proton and no neutrons."],
     ["Helium", 2, "He", 4.003, "It is a colorless, odorless, tasteless, non-toxic, inert, monatomic gas, the first in the noble gas group in the periodic table. Its boiling point is the lowest among all the elements. Helium is the second lightest and second most abundant element in the observable universe (hydrogen is the lightest and most abundant). It is present at about 24% of the total elemental mass, which is more than 12 times the mass of all the heavier elements combined."],
     ["Lithium", 3, "Li", 6.941, "Lithium is the lightest metal and the lightest solid element. Like all alkali metals, lithium is highly reactive and flammable, and must be stored in mineral oil. When cut, it exhibits a metallic luster, but moist air corrodes it quickly to a dull silvery gray, then black tarnish. It never occurs freely in nature, but only in (usually ionic) compounds, such as pegmatitic minerals, which were once the main source of lithium. Due to its solubility as an ion, it is present in ocean water and is commonly obtained from brines."],
@@ -123,7 +123,7 @@ var elements = [
     ["Oganesson", 118, "Og", "unknown", "Oganesson is a synthetic chemical element. It was first synthesized in 2002 at the Joint Institute for Nuclear Research (JINR) in Dubna, near Moscow, Russia, by a joint team of Russian and American scientists. In December 2015, it was recognized as one of four new elements by the Joint Working Party of the international scientific bodies IUPAC and IUPAP. It was formally named on 28 November 2016."]
 ];
 
-var elementGroup = [
+const elementGroup = [
     ["Alkali Metal", "The alkali metals are all shiny, soft, highly reactive metals at standard temperature and pressure and readily lose their outermost electron to form cations with charge +1. They can all be cut easily with a knife due to their softness, exposing a shiny surface that tarnishes rapidly in air due to oxidation by atmospheric moisture and oxygen (and in the case of lithium, nitrogen). Because of their high reactivity, they must be stored under oil to prevent reaction with air, and are found naturally only in salts and never as the free elements."],
     ["Alkaline Earth", "The elements have very similar properties: they are all shiny, silvery-white, somewhat reactive metals at standard temperature and pressure. Structurally, they (together with helium) have in common an outer s-orbital which is full; that is, this orbital contains its full complement of two electrons, which the alkaline earth metals readily lose to form cations with charge +2, and an oxidation state of +2. All the discovered alkaline earth metals occur in nature, although radium occurs only through the decay chain of uranium and thorium and not as a primordial element."],
     ["Transition Metal", "Transition elements (also known as transition metals) are elements that have partially filled d orbitals. IUPAC defines transition elements as an element having a d subshell that is partially filled with electrons, or an element that has the ability to form stable cations with an incompletely filled d orbital. These elements have completely filled d orbitals in their ground states and even in some of their oxidation states. One such example is the +2 oxidation state of mercury, which corresponds to an electronic configuration of (n-1)d10."],
@@ -136,22 +136,22 @@ var elementGroup = [
     ["Actinide", "The actinoid series encompasses the 15 metallic chemical elements with atomic numbers. The actinoid series derives its name from the first element in the series, actinium. The informal chemical symbol An is used in general discussions of actinoid chemistry to refer to any actinoid. The series mostly corresponds to the filling of the 5f electron shell, although actinium and thorium lack any 5f electrons, and curium and lawrencium have the same number as the preceding element. All actinides are radioactive and release energy upon radioactive decay."]
 ];
 
-function tableInfo(i) {
+const tableInfo = i => {
     document.write("<sup>" + elements[i][1] + "</sup>" + elements[i][2] + "<h1>" + elements[i][0] + "</h1><h2>" + elements[i][3] + "</h2>");
 }
 
-function elementGrp(i) {
+const elementGrp = i => {
     document.write("<h1 class='group'>" + elementGroup[i][0] + "</h1>");
 }
 
-$(document).ready(function() {
+$(document).ready(() => {
     const TAB = "\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0";
-    var info1 = $("#info1");
-    var info2 = $("#info2");
+    const info1 = $("#info1");
+    const info2 = $("#info2");
 
 
-    function info(id, i) {
-        $(id).hover(function() {
+    const info = (id, i) => {
+        $(id).hover(() => {
             if (elements[i][3] == "unknown") {
                 info1.text("Element Name: " + elements[i][0] + TAB + "Atomic Number: " + elements[i][1] + TAB + "Symbol: " + elements[i][2] + TAB + "Standard Atomic Weight: " + elements[i][3]);
                 info2.text(elements[i][4]);
@@ -162,21 +162,21 @@ $(document).ready(function() {
         });
     }
 
-    for (var i = 0; i < 118; i++) {
-        var id = "#" + elements[i][0].toLowerCase();
+    for (let i = 0; i < 118; i++) {
+        const id = "#" + elements[i][0].toLowerCase();
         info(id, i);
     }
 
 
-    function elementGroupInfo(id, i) {
-        $(id).hover(function() {
+    const elementGroupInfo = (id, i) => {
+        $(id).hover(function () {
             info1.text("Element Group Name: " + elementGroup[i][0]);
             info2.text(elementGroup[i][1]);
         });
     }
 
-    for (var i = 0; i < 10; i++) {
-        var id = "#" + elementGroup[i][0].split(" ").join("").toLowerCase();
+    for (let i = 0; i < 10; i++) {
+        const id = "#" + elementGroup[i][0].split(" ").join("").toLowerCase();
         elementGroupInfo(id, i);
     }
 });

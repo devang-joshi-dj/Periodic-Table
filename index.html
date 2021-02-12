@@ -1,721 +1,736 @@
+<!--
+	Project Name - Clock-Stopwatch-Timer
+	Author - Devang Joshi
+-->
 <!DOCTYPE html>
 <html lang="en-us">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="It is an Interactive Periodic Table which helps the user in learning about all the elements in an Interactive Way."
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, Periodic, Table, Periodic-Table"
+    />
+    <meta name="author" content="Devang Joshi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Periodic Table</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js" integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE=" crossorigin="anonymous"></script>
+    <script
+      src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"
+      integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE="
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="infoScript.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <table class="bold">
-        <tr class="nobr">
-            <td></td>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-            <td>10</td>
-            <td>11</td>
-            <td>12</td>
-            <td>13</td>
-            <td>14</td>
-            <td>15</td>
-            <td>16</td>
-            <td>17</td>
-            <td>18</td>
-        </tr>
-        <tr>
-            <td class="nobrd">1</td>
-            <td class="non" id="hydrogen">
-                <script type="text/javascript">
-                tableInfo(0)
-                </script>
-            </td>
-            <td class="nobrd" colspan="16" id="info1"></td>
-            <td class="nobel" id="helium">
-                <script type="text/javascript">
-                tableInfo(1)
-                </script>
-            </td>
-        </tr>
-        <tr>
-            <td class="nobrd">2</td>
-            <td class="alkali" id="lithium">
-                <script type="text/javascript">
-                tableInfo(2)
-                </script>
-            </td>
-            <td class="alkaline" id="beryllium">
-                <script type="text/javascript">
-                tableInfo(3)
-                </script>
-            </td>
-            <td class="nobrd" colspan="10" rowspan="2" id="info2"></td>
-            <td class="semi" id="boron">
-                <script type="text/javascript">
-                tableInfo(4)
-                </script>
-            </td>
-            <td class="non" id="carbon">
-                <script type="text/javascript">
-                tableInfo(5)
-                </script>
-            </td>
-            <td class="non" id="nitrogen">
-                <script type="text/javascript">
-                tableInfo(6)
-                </script>
-            </td>
-            <td class="non" id="oxygen">
-                <script type="text/javascript">
-                tableInfo(7)
-                </script>
-            </td>
-            <td class="halogen" id="fluorine">
-                <script type="text/javascript">
-                tableInfo(8)
-                </script>
-            </td>
-            <td class="nobel" id="neon">
-                <script type="text/javascript">
-                tableInfo(9)
-                </script>
-            </td>
-        </tr>
-        <tr>
-            <td class="nobrd">3</td>
-            <td class="alkali" id="sodium">
-                <script type="text/javascript">
-                tableInfo(10)
-                </script>
-            </td>
-            <td class="alkaline" id="magnesium">
-                <script type="text/javascript">
-                tableInfo(11)
-                </script>
-            </td>
-            <td class="basic" id="aluminium">
-                <script type="text/javascript">
-                tableInfo(12)
-                </script>
-            </td>
-            <td class="semi" id="silicon">
-                <script type="text/javascript">
-                tableInfo(13)
-                </script>
-            </td>
-            <td class="non" id="phosphorus">
-                <script type="text/javascript">
-                tableInfo(14)
-                </script>
-            </td>
-            <td class="non" id="sulfur">
-                <script type="text/javascript">
-                tableInfo(15)
-                </script>
-            </td>
-            <td class="halogen" id="chlorine">
-                <script type="text/javascript">
-                tableInfo(16)
-                </script>
-            </td>
-            <td class="nobel" id="argon">
-                <script type="text/javascript">
-                tableInfo(17)
-                </script>
-            </td>
-        </tr>
-        <tr>
-            <td class="nobrd">4</td>
-            <td class="alkali" id="potassium">
-                <script type="text/javascript">
-                tableInfo(18)
-                </script>
-            </td>
-            <td class="alkaline" id="calcium">
-                <script type="text/javascript">
-                tableInfo(19)
-                </script>
-            </td>
-            <td class="transition" id="scandium">
-                <script type="text/javascript">
-                tableInfo(20)
-                </script>
-            </td>
-            <td class="transition" id="titanium">
-                <script type="text/javascript">
-                tableInfo(21)
-                </script>
-            </td>
-            <td class="transition" id="vanadium">
-                <script type="text/javascript">
-                tableInfo(22)
-                </script>
-            </td>
-            <td class="transition" id="chromium">
-                <script type="text/javascript">
-                tableInfo(23)
-                </script>
-            </td>
-            <td class="transition" id="manganese">
-                <script type="text/javascript">
-                tableInfo(24)
-                </script>
-            </td>
-            <td class="transition" id="iron">
-                <script type="text/javascript">
-                tableInfo(25)
-                </script>
-            </td>
-            <td class="transition" id="cobalt">
-                <script type="text/javascript">
-                tableInfo(26)
-                </script>
-            </td>
-            <td class="transition" id="nickel">
-                <script type="text/javascript">
-                tableInfo(27)
-                </script>
-            </td>
-            <td class="transition" id="copper">
-                <script type="text/javascript">
-                tableInfo(28)
-                </script>
-            </td>
-            <td class="transition" id="zinc">
-                <script type="text/javascript">
-                tableInfo(29)
-                </script>
-            </td>
-            <td class="basic" id="gallium">
-                <script type="text/javascript">
-                tableInfo(30)
-                </script>
-            </td>
-            <td class="semi" id="germanium">
-                <script type="text/javascript">
-                tableInfo(31)
-                </script>
-            </td>
-            <td class="semi" id="arsenic">
-                <script type="text/javascript">
-                tableInfo(32)
-                </script>
-            </td>
-            <td class="non" id="selenium">
-                <script type="text/javascript">
-                tableInfo(33)
-                </script>
-            </td>
-            <td class="halogen" id="bromine">
-                <script type="text/javascript">
-                tableInfo(34)
-                </script>
-            </td>
-            <td class="nobel" id="krypton">
-                <script type="text/javascript">
-                tableInfo(35)
-                </script>
-            </td>
-        </tr>
-        <tr>
-            <td class="nobrd">5</td>
-            <td class="alkali" id="rubidium">
-                <script type="text/javascript">
-                tableInfo(36)
-                </script>
-            </td>
-            <td class="alkaline" id="strontium">
-                <script type="text/javascript">
-                tableInfo(37)
-                </script>
-            </td>
-            <td class="transition" id="yttrium">
-                <script type="text/javascript">
-                tableInfo(38)
-                </script>
-            </td>
-            <td class="transition" id="zirconium">
-                <script type="text/javascript">
-                tableInfo(39)
-                </script>
-            </td>
-            <td class="transition" id="niobium">
-                <script type="text/javascript">
-                tableInfo(40)
-                </script>
-            </td>
-            <td class="transition" id="molybdenum">
-                <script type="text/javascript">
-                tableInfo(41)
-                </script>
-            </td>
-            <td class="transition" id="technetium">
-                <script type="text/javascript">
-                tableInfo(42)
-                </script>
-            </td>
-            <td class="transition" id="ruthenium">
-                <script type="text/javascript">
-                tableInfo(43)
-                </script>
-            </td>
-            <td class="transition" id="rhodium">
-                <script type="text/javascript">
-                tableInfo(44)
-                </script>
-            </td>
-            <td class="transition" id="palladium">
-                <script type="text/javascript">
-                tableInfo(45)
-                </script>
-            </td>
-            <td class="transition" id="silver">
-                <script type="text/javascript">
-                tableInfo(46)
-                </script>
-            </td>
-            <td class="transition" id="cadmium">
-                <script type="text/javascript">
-                tableInfo(47)
-                </script>
-            </td>
-            <td class="basic" id="indium">
-                <script type="text/javascript">
-                tableInfo(48)
-                </script>
-            </td>
-            <td class="basic" id="tin">
-                <script type="text/javascript">
-                tableInfo(49)
-                </script>
-            </td>
-            <td class="semi" id="antimony">
-                <script type="text/javascript">
-                tableInfo(50)
-                </script>
-            </td>
-            <td class="semi" id="tellurium">
-                <script type="text/javascript">
-                tableInfo(51)
-                </script>
-            </td>
-            <td class="halogen" id="iodine">
-                <script type="text/javascript">
-                tableInfo(52)
-                </script>
-            </td>
-            <td class="nobel" id="xenon">
-                <script type="text/javascript">
-                tableInfo(53)
-                </script>
-            </td>
-        </tr>
-        <tr>
-            <td class="nobrd">6</td>
-            <td class="alkali" id="cesium">
-                <script type="text/javascript">
-                tableInfo(54)
-                </script>
-            </td>
-            <td class="alkaline" id="barium">
-                <script type="text/javascript">
-                tableInfo(55)
-                </script>
-            </td>
-            <td class="lanthanide"><sup>57-71</sup></td>
-            <td class="transition" id="hafnium">
-                <script type="text/javascript">
-                tableInfo(71)
-                </script>
-            </td>
-            <td class="transition" id="tantalum">
-                <script type="text/javascript">
-                tableInfo(72)
-                </script>
-            </td>
-            <td class="transition" id="tungsten">
-                <script type="text/javascript">
-                tableInfo(73)
-                </script>
-            </td>
-            <td class="transition" id="rhenium">
-                <script type="text/javascript">
-                tableInfo(74)
-                </script>
-            </td>
-            <td class="transition" id="osmium">
-                <script type="text/javascript">
-                tableInfo(75)
-                </script>
-            </td>
-            <td class="transition" id="iridium">
-                <script type="text/javascript">
-                tableInfo(76)
-                </script>
-            </td>
-            <td class="transition" id="platinum">
-                <script type="text/javascript">
-                tableInfo(77)
-                </script>
-            </td>
-            <td class="transition" id="gold">
-                <script type="text/javascript">
-                tableInfo(78)
-                </script>
-            </td>
-            <td class="transition" id="mercury">
-                <script type="text/javascript">
-                tableInfo(79)
-                </script>
-            </td>
-            <td class="basic" id="thallium">
-                <script type="text/javascript">
-                tableInfo(80)
-                </script>
-            </td>
-            <td class="basic" id="lead">
-                <script type="text/javascript">
-                tableInfo(81)
-                </script>
-            </td>
-            <td class="basic" id="bismuth">
-                <script type="text/javascript">
-                tableInfo(82)
-                </script>
-            </td>
-            <td class="semi" id="polonium">
-                <script type="text/javascript">
-                tableInfo(83)
-                </script>
-            </td>
-            <td class="halogen" id="astatine">
-                <script type="text/javascript">
-                tableInfo(84)
-                </script>
-            </td>
-            <td class="nobel" id="radon">
-                <script type="text/javascript">
-                tableInfo(85)
-                </script>
-            </td>
-        </tr>
-        <tr>
-            <td class="nobrd">7</td>
-            <td class="alkali" id="francium">
-                <script type="text/javascript">
-                tableInfo(86)
-                </script>
-            </td>
-            <td class="alkaline" id="radium">
-                <script type="text/javascript">
-                tableInfo(87)
-                </script>
-            </td>
-            <td class="actinide"><sup>89-103</sup></td>
-            <td class="transition" id="rutherfordium">
-                <script type="text/javascript">
-                tableInfo(103)
-                </script>
-            </td>
-            <td class="transition" id="dubnium">
-                <script type="text/javascript">
-                tableInfo(104)
-                </script>
-            </td>
-            <td class="transition" id="seaborgium">
-                <script type="text/javascript">
-                tableInfo(105)
-                </script>
-            </td>
-            <td class="transition" id="bohrium">
-                <script type="text/javascript">
-                tableInfo(106)
-                </script>
-            </td>
-            <td class="transition" id="hassium">
-                <script type="text/javascript">
-                tableInfo(107)
-                </script>
-            </td>
-            <td class="transition" id="meitnerium">
-                <script type="text/javascript">
-                tableInfo(108)
-                </script>
-            </td>
-            <td class="transition" id="darmstadium">
-                <script type="text/javascript">
-                tableInfo(109)
-                </script>
-            </td>
-            <td class="transition" id="roentgenium">
-                <script type="text/javascript">
-                tableInfo(110)
-                </script>
-            </td>
-            <td class="transition" id="copernicium">
-                <script type="text/javascript">
-                tableInfo(111)
-                </script>
-            </td>
-            <td class="basic" id="nihonium">
-                <script type="text/javascript">
-                tableInfo(112)
-                </script>
-            </td>
-            <td class="basic" id="flerovium">
-                <script type="text/javascript">
-                tableInfo(113)
-                </script>
-            </td>
-            <td class="basic" id="moscovium">
-                <script type="text/javascript">
-                tableInfo(114)
-                </script>
-            </td>
-            <td class="basic" id="livermorium">
-                <script type="text/javascript">
-                tableInfo(115)
-                </script>
-            </td>
-            <td class="halogen" id="tenessine">
-                <script type="text/javascript">
-                tableInfo(116)
-                </script>
-            </td>
-            <td class="nobel" id="oganesson">
-                <script type="text/javascript">
-                tableInfo(117)
-                </script>
-            </td>
-        </tr>
+      <tr class="nobr">
+        <td></td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td class="nobrd">1</td>
+        <td class="non" id="hydrogen">
+          <script type="text/javascript">
+            tableInfo(0);
+          </script>
+        </td>
+        <td class="nobrd" colspan="16" id="info1"></td>
+        <td class="nobel" id="helium">
+          <script type="text/javascript">
+            tableInfo(1);
+          </script>
+        </td>
+      </tr>
+      <tr>
+        <td class="nobrd">2</td>
+        <td class="alkali" id="lithium">
+          <script type="text/javascript">
+            tableInfo(2);
+          </script>
+        </td>
+        <td class="alkaline" id="beryllium">
+          <script type="text/javascript">
+            tableInfo(3);
+          </script>
+        </td>
+        <td class="nobrd" colspan="10" rowspan="2" id="info2"></td>
+        <td class="semi" id="boron">
+          <script type="text/javascript">
+            tableInfo(4);
+          </script>
+        </td>
+        <td class="non" id="carbon">
+          <script type="text/javascript">
+            tableInfo(5);
+          </script>
+        </td>
+        <td class="non" id="nitrogen">
+          <script type="text/javascript">
+            tableInfo(6);
+          </script>
+        </td>
+        <td class="non" id="oxygen">
+          <script type="text/javascript">
+            tableInfo(7);
+          </script>
+        </td>
+        <td class="halogen" id="fluorine">
+          <script type="text/javascript">
+            tableInfo(8);
+          </script>
+        </td>
+        <td class="nobel" id="neon">
+          <script type="text/javascript">
+            tableInfo(9);
+          </script>
+        </td>
+      </tr>
+      <tr>
+        <td class="nobrd">3</td>
+        <td class="alkali" id="sodium">
+          <script type="text/javascript">
+            tableInfo(10);
+          </script>
+        </td>
+        <td class="alkaline" id="magnesium">
+          <script type="text/javascript">
+            tableInfo(11);
+          </script>
+        </td>
+        <td class="basic" id="aluminium">
+          <script type="text/javascript">
+            tableInfo(12);
+          </script>
+        </td>
+        <td class="semi" id="silicon">
+          <script type="text/javascript">
+            tableInfo(13);
+          </script>
+        </td>
+        <td class="non" id="phosphorus">
+          <script type="text/javascript">
+            tableInfo(14);
+          </script>
+        </td>
+        <td class="non" id="sulfur">
+          <script type="text/javascript">
+            tableInfo(15);
+          </script>
+        </td>
+        <td class="halogen" id="chlorine">
+          <script type="text/javascript">
+            tableInfo(16);
+          </script>
+        </td>
+        <td class="nobel" id="argon">
+          <script type="text/javascript">
+            tableInfo(17);
+          </script>
+        </td>
+      </tr>
+      <tr>
+        <td class="nobrd">4</td>
+        <td class="alkali" id="potassium">
+          <script type="text/javascript">
+            tableInfo(18);
+          </script>
+        </td>
+        <td class="alkaline" id="calcium">
+          <script type="text/javascript">
+            tableInfo(19);
+          </script>
+        </td>
+        <td class="transition" id="scandium">
+          <script type="text/javascript">
+            tableInfo(20);
+          </script>
+        </td>
+        <td class="transition" id="titanium">
+          <script type="text/javascript">
+            tableInfo(21);
+          </script>
+        </td>
+        <td class="transition" id="vanadium">
+          <script type="text/javascript">
+            tableInfo(22);
+          </script>
+        </td>
+        <td class="transition" id="chromium">
+          <script type="text/javascript">
+            tableInfo(23);
+          </script>
+        </td>
+        <td class="transition" id="manganese">
+          <script type="text/javascript">
+            tableInfo(24);
+          </script>
+        </td>
+        <td class="transition" id="iron">
+          <script type="text/javascript">
+            tableInfo(25);
+          </script>
+        </td>
+        <td class="transition" id="cobalt">
+          <script type="text/javascript">
+            tableInfo(26);
+          </script>
+        </td>
+        <td class="transition" id="nickel">
+          <script type="text/javascript">
+            tableInfo(27);
+          </script>
+        </td>
+        <td class="transition" id="copper">
+          <script type="text/javascript">
+            tableInfo(28);
+          </script>
+        </td>
+        <td class="transition" id="zinc">
+          <script type="text/javascript">
+            tableInfo(29);
+          </script>
+        </td>
+        <td class="basic" id="gallium">
+          <script type="text/javascript">
+            tableInfo(30);
+          </script>
+        </td>
+        <td class="semi" id="germanium">
+          <script type="text/javascript">
+            tableInfo(31);
+          </script>
+        </td>
+        <td class="semi" id="arsenic">
+          <script type="text/javascript">
+            tableInfo(32);
+          </script>
+        </td>
+        <td class="non" id="selenium">
+          <script type="text/javascript">
+            tableInfo(33);
+          </script>
+        </td>
+        <td class="halogen" id="bromine">
+          <script type="text/javascript">
+            tableInfo(34);
+          </script>
+        </td>
+        <td class="nobel" id="krypton">
+          <script type="text/javascript">
+            tableInfo(35);
+          </script>
+        </td>
+      </tr>
+      <tr>
+        <td class="nobrd">5</td>
+        <td class="alkali" id="rubidium">
+          <script type="text/javascript">
+            tableInfo(36);
+          </script>
+        </td>
+        <td class="alkaline" id="strontium">
+          <script type="text/javascript">
+            tableInfo(37);
+          </script>
+        </td>
+        <td class="transition" id="yttrium">
+          <script type="text/javascript">
+            tableInfo(38);
+          </script>
+        </td>
+        <td class="transition" id="zirconium">
+          <script type="text/javascript">
+            tableInfo(39);
+          </script>
+        </td>
+        <td class="transition" id="niobium">
+          <script type="text/javascript">
+            tableInfo(40);
+          </script>
+        </td>
+        <td class="transition" id="molybdenum">
+          <script type="text/javascript">
+            tableInfo(41);
+          </script>
+        </td>
+        <td class="transition" id="technetium">
+          <script type="text/javascript">
+            tableInfo(42);
+          </script>
+        </td>
+        <td class="transition" id="ruthenium">
+          <script type="text/javascript">
+            tableInfo(43);
+          </script>
+        </td>
+        <td class="transition" id="rhodium">
+          <script type="text/javascript">
+            tableInfo(44);
+          </script>
+        </td>
+        <td class="transition" id="palladium">
+          <script type="text/javascript">
+            tableInfo(45);
+          </script>
+        </td>
+        <td class="transition" id="silver">
+          <script type="text/javascript">
+            tableInfo(46);
+          </script>
+        </td>
+        <td class="transition" id="cadmium">
+          <script type="text/javascript">
+            tableInfo(47);
+          </script>
+        </td>
+        <td class="basic" id="indium">
+          <script type="text/javascript">
+            tableInfo(48);
+          </script>
+        </td>
+        <td class="basic" id="tin">
+          <script type="text/javascript">
+            tableInfo(49);
+          </script>
+        </td>
+        <td class="semi" id="antimony">
+          <script type="text/javascript">
+            tableInfo(50);
+          </script>
+        </td>
+        <td class="semi" id="tellurium">
+          <script type="text/javascript">
+            tableInfo(51);
+          </script>
+        </td>
+        <td class="halogen" id="iodine">
+          <script type="text/javascript">
+            tableInfo(52);
+          </script>
+        </td>
+        <td class="nobel" id="xenon">
+          <script type="text/javascript">
+            tableInfo(53);
+          </script>
+        </td>
+      </tr>
+      <tr>
+        <td class="nobrd">6</td>
+        <td class="alkali" id="cesium">
+          <script type="text/javascript">
+            tableInfo(54);
+          </script>
+        </td>
+        <td class="alkaline" id="barium">
+          <script type="text/javascript">
+            tableInfo(55);
+          </script>
+        </td>
+        <td class="lanthanide"><sup>57-71</sup></td>
+        <td class="transition" id="hafnium">
+          <script type="text/javascript">
+            tableInfo(71);
+          </script>
+        </td>
+        <td class="transition" id="tantalum">
+          <script type="text/javascript">
+            tableInfo(72);
+          </script>
+        </td>
+        <td class="transition" id="tungsten">
+          <script type="text/javascript">
+            tableInfo(73);
+          </script>
+        </td>
+        <td class="transition" id="rhenium">
+          <script type="text/javascript">
+            tableInfo(74);
+          </script>
+        </td>
+        <td class="transition" id="osmium">
+          <script type="text/javascript">
+            tableInfo(75);
+          </script>
+        </td>
+        <td class="transition" id="iridium">
+          <script type="text/javascript">
+            tableInfo(76);
+          </script>
+        </td>
+        <td class="transition" id="platinum">
+          <script type="text/javascript">
+            tableInfo(77);
+          </script>
+        </td>
+        <td class="transition" id="gold">
+          <script type="text/javascript">
+            tableInfo(78);
+          </script>
+        </td>
+        <td class="transition" id="mercury">
+          <script type="text/javascript">
+            tableInfo(79);
+          </script>
+        </td>
+        <td class="basic" id="thallium">
+          <script type="text/javascript">
+            tableInfo(80);
+          </script>
+        </td>
+        <td class="basic" id="lead">
+          <script type="text/javascript">
+            tableInfo(81);
+          </script>
+        </td>
+        <td class="basic" id="bismuth">
+          <script type="text/javascript">
+            tableInfo(82);
+          </script>
+        </td>
+        <td class="semi" id="polonium">
+          <script type="text/javascript">
+            tableInfo(83);
+          </script>
+        </td>
+        <td class="halogen" id="astatine">
+          <script type="text/javascript">
+            tableInfo(84);
+          </script>
+        </td>
+        <td class="nobel" id="radon">
+          <script type="text/javascript">
+            tableInfo(85);
+          </script>
+        </td>
+      </tr>
+      <tr>
+        <td class="nobrd">7</td>
+        <td class="alkali" id="francium">
+          <script type="text/javascript">
+            tableInfo(86);
+          </script>
+        </td>
+        <td class="alkaline" id="radium">
+          <script type="text/javascript">
+            tableInfo(87);
+          </script>
+        </td>
+        <td class="actinide"><sup>89-103</sup></td>
+        <td class="transition" id="rutherfordium">
+          <script type="text/javascript">
+            tableInfo(103);
+          </script>
+        </td>
+        <td class="transition" id="dubnium">
+          <script type="text/javascript">
+            tableInfo(104);
+          </script>
+        </td>
+        <td class="transition" id="seaborgium">
+          <script type="text/javascript">
+            tableInfo(105);
+          </script>
+        </td>
+        <td class="transition" id="bohrium">
+          <script type="text/javascript">
+            tableInfo(106);
+          </script>
+        </td>
+        <td class="transition" id="hassium">
+          <script type="text/javascript">
+            tableInfo(107);
+          </script>
+        </td>
+        <td class="transition" id="meitnerium">
+          <script type="text/javascript">
+            tableInfo(108);
+          </script>
+        </td>
+        <td class="transition" id="darmstadium">
+          <script type="text/javascript">
+            tableInfo(109);
+          </script>
+        </td>
+        <td class="transition" id="roentgenium">
+          <script type="text/javascript">
+            tableInfo(110);
+          </script>
+        </td>
+        <td class="transition" id="copernicium">
+          <script type="text/javascript">
+            tableInfo(111);
+          </script>
+        </td>
+        <td class="basic" id="nihonium">
+          <script type="text/javascript">
+            tableInfo(112);
+          </script>
+        </td>
+        <td class="basic" id="flerovium">
+          <script type="text/javascript">
+            tableInfo(113);
+          </script>
+        </td>
+        <td class="basic" id="moscovium">
+          <script type="text/javascript">
+            tableInfo(114);
+          </script>
+        </td>
+        <td class="basic" id="livermorium">
+          <script type="text/javascript">
+            tableInfo(115);
+          </script>
+        </td>
+        <td class="halogen" id="tenessine">
+          <script type="text/javascript">
+            tableInfo(116);
+          </script>
+        </td>
+        <td class="nobel" id="oganesson">
+          <script type="text/javascript">
+            tableInfo(117);
+          </script>
+        </td>
+      </tr>
     </table>
-    <br>
+    <br />
     <table class="bold">
-        <tr>
-            <td class="nobrd" colspan="3" rowspan="2"></td>
-            <td class="small lanthanide">Lanthanide Series</td>
-            <td class="lanthanide" id="lanthanum">
-                <script type="text/javascript">
-                tableInfo(56)
-                </script>
-            </td>
-            <td class="lanthanide" id="cerium">
-                <script type="text/javascript">
-                tableInfo(57)
-                </script>
-            </td>
-            <td class="lanthanide" id="praseodymium">
-                <script type="text/javascript">
-                tableInfo(58)
-                </script>
-            </td>
-            <td class="lanthanide" id="neodymium">
-                <script type="text/javascript">
-                tableInfo(59)
-                </script>
-            </td>
-            <td class="lanthanide" id="promethium">
-                <script type="text/javascript">
-                tableInfo(60)
-                </script>
-            </td>
-            <td class="lanthanide" id="samarium">
-                <script type="text/javascript">
-                tableInfo(61)
-                </script>
-            </td>
-            <td class="lanthanide" id="europium">
-                <script type="text/javascript">
-                tableInfo(62)
-                </script>
-            </td>
-            <td class="lanthanide" id="gadolinium">
-                <script type="text/javascript">
-                tableInfo(63)
-                </script>
-            </td>
-            <td class="lanthanide" id="terbium">
-                <script type="text/javascript">
-                tableInfo(64)
-                </script>
-            </td>
-            <td class="lanthanide" id="dysprosium">
-                <script type="text/javascript">
-                tableInfo(65)
-                </script>
-            </td>
-            <td class="lanthanide" id="holmium">
-                <script type="text/javascript">
-                tableInfo(66)
-                </script>
-            </td>
-            <td class="lanthanide" id="erbium">
-                <script type="text/javascript">
-                tableInfo(67)
-                </script>
-            </td>
-            <td class="lanthanide" id="thulium">
-                <script type="text/javascript">
-                tableInfo(68)
-                </script>
-            </td>
-            <td class="lanthanide" id="ytterbium">
-                <script type="text/javascript">
-                tableInfo(69)
-                </script>
-            </td>
-            <td class="lanthanide" id="lutetium">
-                <script type="text/javascript">
-                tableInfo(70)
-                </script>
-            </td>
-        </tr>
-        <tr>
-            <td class="small actinide">Actinide Series</td>
-            <td class="actinide" id="actinium">
-                <script type="text/javascript">
-                tableInfo(88)
-                </script>
-            </td>
-            <td class="actinide" id="thorium">
-                <script type="text/javascript">
-                tableInfo(89)
-                </script>
-            </td>
-            <td class="actinide" id="protactinium">
-                <script type="text/javascript">
-                tableInfo(90)
-                </script>
-            </td>
-            <td class="actinide" id="uranium">
-                <script type="text/javascript">
-                tableInfo(91)
-                </script>
-            </td>
-            <td class="actinide" id="neptunium">
-                <script type="text/javascript">
-                tableInfo(92)
-                </script>
-            </td>
-            <td class="actinide" id="plutonium">
-                <script type="text/javascript">
-                tableInfo(93)
-                </script>
-            </td>
-            <td class="actinide" id="americium">
-                <script type="text/javascript">
-                tableInfo(94)
-                </script>
-            </td>
-            <td class="actinide" id="curium">
-                <script type="text/javascript">
-                tableInfo(95)
-                </script>
-            </td>
-            <td class="actinide" id="berkelium">
-                <script type="text/javascript">
-                tableInfo(96)
-                </script>
-            </td>
-            <td class="actinide" id="californium">
-                <script type="text/javascript">
-                tableInfo(97)
-                </script>
-            </td>
-            <td class="actinide" id="einsteinium">
-                <script type="text/javascript">
-                tableInfo(98)
-                </script>
-            </td>
-            <td class="actinide" id="fermium">
-                <script type="text/javascript">
-                tableInfo(99)
-                </script>
-            </td>
-            <td class="actinide" id="mendelevium">
-                <script type="text/javascript">
-                tableInfo(100)
-                </script>
-            </td>
-            <td class="actinide" id="nobelium">
-                <script type="text/javascript">
-                tableInfo(101)
-                </script>
-            </td>
-            <td class="actinide" id="lawrencium">
-                <script type="text/javascript">
-                tableInfo(102)
-                </script>
-            </td>
-        </tr>
+      <tr>
+        <td class="nobrd" colspan="3" rowspan="2"></td>
+        <td class="small lanthanide">Lanthanide Series</td>
+        <td class="lanthanide" id="lanthanum">
+          <script type="text/javascript">
+            tableInfo(56);
+          </script>
+        </td>
+        <td class="lanthanide" id="cerium">
+          <script type="text/javascript">
+            tableInfo(57);
+          </script>
+        </td>
+        <td class="lanthanide" id="praseodymium">
+          <script type="text/javascript">
+            tableInfo(58);
+          </script>
+        </td>
+        <td class="lanthanide" id="neodymium">
+          <script type="text/javascript">
+            tableInfo(59);
+          </script>
+        </td>
+        <td class="lanthanide" id="promethium">
+          <script type="text/javascript">
+            tableInfo(60);
+          </script>
+        </td>
+        <td class="lanthanide" id="samarium">
+          <script type="text/javascript">
+            tableInfo(61);
+          </script>
+        </td>
+        <td class="lanthanide" id="europium">
+          <script type="text/javascript">
+            tableInfo(62);
+          </script>
+        </td>
+        <td class="lanthanide" id="gadolinium">
+          <script type="text/javascript">
+            tableInfo(63);
+          </script>
+        </td>
+        <td class="lanthanide" id="terbium">
+          <script type="text/javascript">
+            tableInfo(64);
+          </script>
+        </td>
+        <td class="lanthanide" id="dysprosium">
+          <script type="text/javascript">
+            tableInfo(65);
+          </script>
+        </td>
+        <td class="lanthanide" id="holmium">
+          <script type="text/javascript">
+            tableInfo(66);
+          </script>
+        </td>
+        <td class="lanthanide" id="erbium">
+          <script type="text/javascript">
+            tableInfo(67);
+          </script>
+        </td>
+        <td class="lanthanide" id="thulium">
+          <script type="text/javascript">
+            tableInfo(68);
+          </script>
+        </td>
+        <td class="lanthanide" id="ytterbium">
+          <script type="text/javascript">
+            tableInfo(69);
+          </script>
+        </td>
+        <td class="lanthanide" id="lutetium">
+          <script type="text/javascript">
+            tableInfo(70);
+          </script>
+        </td>
+      </tr>
+      <tr>
+        <td class="small actinide">Actinide Series</td>
+        <td class="actinide" id="actinium">
+          <script type="text/javascript">
+            tableInfo(88);
+          </script>
+        </td>
+        <td class="actinide" id="thorium">
+          <script type="text/javascript">
+            tableInfo(89);
+          </script>
+        </td>
+        <td class="actinide" id="protactinium">
+          <script type="text/javascript">
+            tableInfo(90);
+          </script>
+        </td>
+        <td class="actinide" id="uranium">
+          <script type="text/javascript">
+            tableInfo(91);
+          </script>
+        </td>
+        <td class="actinide" id="neptunium">
+          <script type="text/javascript">
+            tableInfo(92);
+          </script>
+        </td>
+        <td class="actinide" id="plutonium">
+          <script type="text/javascript">
+            tableInfo(93);
+          </script>
+        </td>
+        <td class="actinide" id="americium">
+          <script type="text/javascript">
+            tableInfo(94);
+          </script>
+        </td>
+        <td class="actinide" id="curium">
+          <script type="text/javascript">
+            tableInfo(95);
+          </script>
+        </td>
+        <td class="actinide" id="berkelium">
+          <script type="text/javascript">
+            tableInfo(96);
+          </script>
+        </td>
+        <td class="actinide" id="californium">
+          <script type="text/javascript">
+            tableInfo(97);
+          </script>
+        </td>
+        <td class="actinide" id="einsteinium">
+          <script type="text/javascript">
+            tableInfo(98);
+          </script>
+        </td>
+        <td class="actinide" id="fermium">
+          <script type="text/javascript">
+            tableInfo(99);
+          </script>
+        </td>
+        <td class="actinide" id="mendelevium">
+          <script type="text/javascript">
+            tableInfo(100);
+          </script>
+        </td>
+        <td class="actinide" id="nobelium">
+          <script type="text/javascript">
+            tableInfo(101);
+          </script>
+        </td>
+        <td class="actinide" id="lawrencium">
+          <script type="text/javascript">
+            tableInfo(102);
+          </script>
+        </td>
+      </tr>
     </table>
-    <br>
+    <br />
     <table class="bold property small">
-        <tr>
-            <td class="alkali" id="alkalimetal">
-                <script type="text/javascript">
-                elementGrp(0)
-                </script>
-            </td>
-            <td class="alkaline" id="alkalineearth">
-                <script type="text/javascript">
-                elementGrp(1)
-                </script>
-            </td>
-            <td class="transition" id="transitionmetal">
-                <script type="text/javascript">
-                elementGrp(2)
-                </script>
-            </td>
-            <td class="basic" id="basicmetal">
-                <script type="text/javascript">
-                elementGrp(3)
-                </script>
-            </td>
-            <td class="semi" id="semimetal">
-                <script type="text/javascript">
-                elementGrp(4)
-                </script>
-            </td>
-            <td class="non" id="nonmetal">
-                <script type="text/javascript">
-                elementGrp(5)
-                </script>
-            </td>
-            <td class="halogen" id="halogen">
-                <script type="text/javascript">
-                elementGrp(6)
-                </script>
-            </td>
-            <td class="nobel" id="noblegas">
-                <script type="text/javascript">
-                elementGrp(7)
-                </script>
-            </td>
-            <td class="lanthanide" id="lanthanide">
-                <script type="text/javascript">
-                elementGrp(8)
-                </script>
-            </td>
-            <td class="actinide" id="actinide">
-                <script type="text/javascript">
-                elementGrp(9)
-                </script>
-            </td>
-        </tr>
+      <tr>
+        <td class="alkali" id="alkalimetal">
+          <script type="text/javascript">
+            elementGrp(0);
+          </script>
+        </td>
+        <td class="alkaline" id="alkalineearth">
+          <script type="text/javascript">
+            elementGrp(1);
+          </script>
+        </td>
+        <td class="transition" id="transitionmetal">
+          <script type="text/javascript">
+            elementGrp(2);
+          </script>
+        </td>
+        <td class="basic" id="basicmetal">
+          <script type="text/javascript">
+            elementGrp(3);
+          </script>
+        </td>
+        <td class="semi" id="semimetal">
+          <script type="text/javascript">
+            elementGrp(4);
+          </script>
+        </td>
+        <td class="non" id="nonmetal">
+          <script type="text/javascript">
+            elementGrp(5);
+          </script>
+        </td>
+        <td class="halogen" id="halogen">
+          <script type="text/javascript">
+            elementGrp(6);
+          </script>
+        </td>
+        <td class="nobel" id="noblegas">
+          <script type="text/javascript">
+            elementGrp(7);
+          </script>
+        </td>
+        <td class="lanthanide" id="lanthanide">
+          <script type="text/javascript">
+            elementGrp(8);
+          </script>
+        </td>
+        <td class="actinide" id="actinide">
+          <script type="text/javascript">
+            elementGrp(9);
+          </script>
+        </td>
+      </tr>
     </table>
-</body>
-
+  </body>
 </html>

@@ -1,17 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    cursor: default;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
 table {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Each Box of Table */
 
 table td {
     width: 61.5px;
     height: 61.5px;
     text-align: center;
     overflow: hidden;
-    cursor: default;
-}
-
-td {
     border: 1px solid;
     padding: 0;
 }
@@ -53,7 +72,8 @@ h2 {
     margin: 0;
 }
 
-/*Color*/
+/* Color For Each Element Group */
+
 .alkali {
     background: #e5809e;
     border-color: #6a162f;
